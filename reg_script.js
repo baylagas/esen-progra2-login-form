@@ -3,8 +3,11 @@ function registerNewUser(){
     var reg_password = document.getElementById("passw_reg").value;
 
     //alert(reg_user);
-
     var userArray = [];
+
+    if(sessionStorage.getItem("wUserArray")!==null){
+        userArray = JSON.parse(sessionStorage.getItem("wUserArray"));
+    }
 
     var current_reg = {
         user: reg_user,

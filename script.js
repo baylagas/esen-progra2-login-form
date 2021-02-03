@@ -30,9 +30,11 @@ function checkLogin(){
 }
 
 function checkLoginInfo(user, password, userArray){
-    for(var i=0; i<userArray.length; i++){
-        if(userArray[i].user===user && userArray[i].password === password){
-            return true;
+    if(userArray!==null && userArray.length > 0){
+        for(var i=0; i<userArray.length; i++){
+            if(userArray[i].user===user && userArray[i].password === password){
+                return true;
+            }
         }
     }
     return false;
