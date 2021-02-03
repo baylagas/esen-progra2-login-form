@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+
+    <div>
+        <h2>registration form</h2>
+        <span>user</span>
+        <input type="text" name="user" id="user_reg" placeholder="user...">
+        <span>password</span>
+        <input type="text" name="passw" id="passw_reg" placeholder="password...">
+        <span>role</span>
+        <select name="role" id="role">
+            <option value="client">client</option>
+            <option value="admin">admin</option>
+        </select>
+        <button onclick="registerNewUser()">register</button>
+    </div>
+
+    <br>
+
+    <div>
+        <button onClick="goToLogin()">go to login</button>
+    </div>
+
+    <script src="reg_script.js"></script>    
+</body>
+</html>
